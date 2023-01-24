@@ -25,7 +25,7 @@ const UserLogin = () => {
       email: userlogin.email,
       password: userlogin.password,
     };
-    if(!(userlogin.email && userlogin.password)){
+    if(!(userlogin.email || userlogin.password)){
       toast("please fill the details")
     }else{
       const loginRoute = await axios.post("/login", getdata)

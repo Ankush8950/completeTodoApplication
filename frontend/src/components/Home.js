@@ -5,17 +5,13 @@ import Navbar from './Navbar';
 
 function Home() {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full h-screen">
+    <div className=''>
     <Navbar />
-    <div>
+    </div>
+    <div className='ml-[23rem] w-full'>
     <AddTitle />
     <AddTasks />
-
-
-     {/* <Routes>
-      <Route path='/' element={<AddTitle />} />
-      <Route path='/userlist' element={<AddTasks />} />
-     </Routes> */}
      </div>
     </div>
   );

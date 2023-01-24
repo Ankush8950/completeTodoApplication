@@ -77,7 +77,7 @@ const AddTasks = () => {
   };
 
   return (
-    <div className="w-[60rem] flex flex-col items-center justify-center" id="AddTasks">
+    <div className="w-[50rem] h-full flex flex-col items-center justify-center" id="AddTasks">
       <div className="w-full h-20 bg-white">
         <input
           className="bg-[#F3F4F6] border-t-0 h-20 outline-inherit appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
@@ -89,7 +89,7 @@ const AddTasks = () => {
         />
       </div>
 
-      <div className="flex flex-col w-[55rem] mt-10 overscroll-auto relative">
+      <div className="flex flex-col w-[45rem] mt-10 overscroll-auto relative">
         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="py-4 inline-block min-w-full sm:px-6 lg:px-8">
             <div className="overflow-hidden">

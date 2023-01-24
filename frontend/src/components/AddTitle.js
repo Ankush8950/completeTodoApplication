@@ -46,12 +46,12 @@ const AddTitle = () => {
 
 
   return (
-    <div className="w-[60rem] h-screen " id="AddTitle">
+    <div className="w-[50rem] h-screen " id="AddTitle">
       <div className="pt-10 pb-5">
         <h1 className="font-semibold text-3xl text-center">Add Title</h1>
       </div>
       <div className="w-full h-[1px] bg-black"></div>
-      <div className="w-[60rem] pt-20">
+      <div className="w-[50rem] pt-20">
         <form onSubmit={OnHandleData} className="flex flex-col items-center ">
           <input
             className="w-[40rem] h-10   placeholder:text-slate-400 block bg-[#F3F4F6] w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm "
