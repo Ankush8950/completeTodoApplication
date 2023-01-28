@@ -3,7 +3,8 @@ const router = express.Router()
 const {
     home,
     register,
-    login
+    login,
+    logOut
 } = require("../controllers/userRegistration")
 
 
@@ -23,6 +24,7 @@ const {
 router.get("/",home)
 router.post("/register", register)
 router.post("/login", login)
+router.get("/logOut", logOut)
 
 // Todo 
 router.post("/createTodo",createTodo)

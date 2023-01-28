@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import {toast } from 'react-toastify';
+
 
 const AddTitle = () => {
   const [addTitle, setAddTitle] = useState("");
@@ -8,11 +10,11 @@ const AddTitle = () => {
 
   const submitData = async () => {
     const data = {
-      title: addTitle,
-      tasks: addTasks
+      title: addTitle.toLocaleLowerCase(),
+      tasks: addTasks.toLocaleLowerCase()
     };
     if (!addTitle) {
-      alert("please add title");
+      toast("please add title");
     }
       try {
         const res = await axios.post("/createTodo", data);

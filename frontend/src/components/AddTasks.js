@@ -25,15 +25,14 @@ const AddTasks = () => {
 
   useEffect(() => {
     getUerList();
-  }, [AddTasks]);
+  }, []);
 
   // search function
   const searchTodo = async (e) => {
     try {
-      const quary = e.target.value;
+      const quary = e.target.value.toLowerCase();
       if (quary) {
         const res = await axios.get(`/searchTodo/${quary}`);
-        console.log(res);
         if (res) {
           setGetAllItem(res.data.data);
         }

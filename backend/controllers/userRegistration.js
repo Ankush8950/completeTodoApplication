@@ -100,3 +100,20 @@ exports.login = async(req,res) =>{
         })
     }
 }
+
+
+
+exports.logOut = async (req, res) => {
+   try {
+     res.cookie("cookie", null, {
+         expires: new Date(Date.now()),
+         httpOnly: true
+     })
+     res.status(200).json({
+         success: true,
+         massage: "Logged Out"
+     })
+   } catch (error) {
+    console.log(error);
+   }
+}
